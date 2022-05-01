@@ -1,4 +1,4 @@
-package com.wbj.reggie.entity.service;
+package com.wbj.reggie.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.wbj.reggie.entity.Employee;

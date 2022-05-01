@@ -1,8 +1,11 @@
-package com.wbj.reggie.entity.service.impl;
+package com.wbj.reggie.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wbj.reggie.entity.Employee;
-import com.wbj.reggie.entity.service.EmployeeService;
+import com.wbj.reggie.mapper.EmployeeMapper;
+import com.wbj.reggie.service.EmployeeService;
+import org.springframework.stereotype.Service;
 
-public class EmployeeServiceImpl extends ServiceImpl<, Employee> implements EmployeeService {
+@Service
+public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper,Employee> implements EmployeeService {
 }
