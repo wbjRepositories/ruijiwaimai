@@ -38,4 +38,5 @@ public class R<T> {
         return this;
     }
 
+    protected int test;
 }
