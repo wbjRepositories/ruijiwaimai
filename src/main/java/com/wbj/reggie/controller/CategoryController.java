@@ -49,10 +49,14 @@ public class CategoryController {
     @DeleteMapping
     public R<String> delete(Long ids){
         log.info("删除分类，id：{}",ids);
-        if (service.removeById(ids)) {
-            return R.success("删除分类成功");
-        }
+        service.remove(ids);
+        return R.success("删除分类成功");
+    }
 
-        return R.error("删除分类失败");
+    @PutMapping
+    public R<String> update(@RequestBody Category category){
+        log.info("修改分类信息：{}",category);
+        service.updateById(category);
+        return R.success("修改分类成功");
     }
 }
